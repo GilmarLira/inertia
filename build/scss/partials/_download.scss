@@ -1,0 +1,40 @@
+
+//////////////////////////////////////////////////////
+/////   download                                  /////
+//////////////////////////////////////////////////////
+
+#download {
+    // @include span-columns(5);
+    height: 50%;    
+    header{
+        // @include span-columns(5);
+        height: 40%; 
+        margin-top: 5%;
+    }
+}
+
+.download_board{
+    @include span-columns(4);
+    // @include shift(2);
+
+    .download_link{
+        @include iner;
+        display: inline-block;
+        font-size: 42pt;
+        padding: 10% 2% 8% 2%;
+
+        white-space: nowrap;
+
+        &:hover{
+            background-color: yellow;
+        }
+
+    }
+}
+
+.download_info{
+    @include span-columns(2);
+    // @include shift(2);
+}
+
+

@@ -1,0 +1,62 @@
+
+//////////////////////////////////////////////////////
+/////   Typeface                                 /////
+//////////////////////////////////////////////////////
+
+@include keyframes(dash) {
+  80% {
+    stroke-dashoffset: 0;
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgba(0, 0, 0, 1);
+    
+  }
+}
+
+
+.hero{
+    @include user-select(none);
+    @include fill-parent;
+    height: 50%;
+
+    svg{ 
+        @include span-columns(12 of 10); 
+        @include shift(-1); 
+        background-color: yellow; 
+    }
+    
+    .hero_text{        
+        fill: rgba(0, 0, 0, 0);
+        stroke-width: 1px;
+        stroke: black;
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+
+        @include animation(dash 5s ease-in-out both);
+        font-size: 100px;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+
+.description{
+    // @include position(absolute, 75% 0 0 0);
+    height: 25%;
+    width: 100%;
+
+    .description_column{
+        @include span-columns(2);
+
+        vertical-align: top;
+        padding-top: 5rem;
+
+        &:first-child{
+            @include shift(6);
+        }
+    }
+}
+
+
+

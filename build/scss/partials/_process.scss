@@ -1,0 +1,55 @@
+
+//////////////////////////////////////////////////////
+/////   process                                  /////
+//////////////////////////////////////////////////////
+
+.process_board{
+    @include position;
+    @include span-columns(10);
+    height: 75%;
+
+    .process_tile_1{
+        @include span-columns(2 of 10);       
+        @include background(url('../img/process_1.jpg') center / cover);
+        @include shift(4);
+
+        height: 33%;
+    }
+
+    .process_tile_2{
+        @include span-columns(2 of 10);
+        @include background(url('../img/process_2.jpg') center / cover);
+        background-color: $color-text;
+        height: 66%;
+    }
+
+    .process_tile_3{
+        @include span-columns(2 of 10);
+        // @include omega;
+        // @include paddings(20, 0);
+        height: 33%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        // vertical-align: bottom;
+    }
+
+    .process_tile_5{ 
+        @include span-columns(4 of 10);
+        @include background(url('../img/process_5.png') center / cover);
+        @include position(absolute, 33% 0 0 0 );
+        @include shift(2);
+        background-color: $color-text;
+        height: 66%;
+    }
+
+    .process_tile_4{
+        @include span-columns(2 of 10);
+        @include omega;
+        @include background(url('../img/process_4.png') center / cover);
+        background-color: $color-text;
+        height: 33%;
+    }
+
+    
+
+}

@@ -1,0 +1,78 @@
+
+//////////////////////////////////////////////////////
+/////   tryout                                   /////
+//////////////////////////////////////////////////////
+
+div.tryout_board{
+    
+    height: 75%;
+
+    .tryout_form{
+        @include span-columns(10 of 10);
+
+        .tryout_text{
+            @include span-columns(4 of 10);
+            @include rhythm(1);
+            @include paddings(2,0);
+            @include margins(0,2);
+            outline: 0px;
+            border: 0px;
+            border-bottom: 2px solid black;
+            background-color: yellow;
+            text-indent: 20px;
+        }
+    }
+
+    svg{
+        clear:both;
+
+        &:nth-child(2){ 
+            font-size: 40pt;
+            height: 10%;
+
+        }
+        &:nth-child(3){ 
+            font-size: 60pt;
+            height: 15%;
+        }
+        &:nth-child(4){ 
+            font-size: 80pt;
+            height: 20%;
+        }
+        &:nth-child(5){ 
+            font-size: 100pt;
+            height: 25%; 
+        }
+        &:nth-child(6){ 
+            font-size: 140pt;
+            height: 30%;
+        }
+
+        // &:nth-child(2){ 
+        //     width: 20%; 
+        //     height: 10%;
+        // }
+        // &:nth-child(3){ 
+        //     width: 40%;
+        //     height: 15%;
+        // }
+        // &:nth-child(4){ 
+        //     width: 60%; 
+        //     height: 20%;
+        // }
+        // &:nth-child(5){ 
+        //     width: 80%;
+        //     height: 25%; 
+        // }
+        // &:nth-child(6){ 
+        //     width: 100%; 
+        //     height: 30%;
+        // }
+        
+    }
+
+    text.tryout_display{        
+        // @include span-columns(10);
+        @include iner;        
+    }
+}

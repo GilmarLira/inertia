@@ -1,0 +1,81 @@
+
+//////////////////////////////////////////////////////
+/////   Start Layout                             /////
+//////////////////////////////////////////////////////
+
+// * { @include outline; } // Uncomment this to see the layout structure
+
+html {
+	height: 100%;
+}
+
+body {
+	@include transition(all .5s ease-in-out);
+	height: 100%;
+}
+
+a, a:hover, a:focus, a:active, a:visited{ color: black;}
+
+
+
+
+//////////////////////////////////////////////////////
+/////   Nav                                      /////
+//////////////////////////////////////////////////////
+
+nav{
+    position: fixed;
+    display: block;
+    top: 0px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    height: 5%;
+    z-index:1000;
+
+    ul{
+        margin: 0px;
+        li{            
+            @include span-columns(2);
+            @include paddings(1, 1);
+            text-align: center;
+            border-top: 4px solid black;
+
+            &:hover{
+                background-color:  yellow;                
+            }
+
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////////////////
+/////   Section                                  /////
+//////////////////////////////////////////////////////
+
+section {
+    @include outer-container;
+    @include position(relative, 0 0 0 0);
+    height: 100%;
+
+    header{ 
+        @include position;
+        height: 20%;
+        margin-bottom: 5%;
+        border-bottom: 4px solid black;        
+
+        h2{ @include position(absolute, 0 0 0px 0);}
+    }
+}
+
+p{ padding: 0px 5px; }
+
+
+
