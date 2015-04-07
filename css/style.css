@@ -1,0 +1,567 @@
+/* Reset
+------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+::-moz-selection {
+  background: #efefef;
+  color: #333;
+  text-shadow: none; }
+
+::selection {
+  background: #efefef;
+  color: #333;
+  text-shadow: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Reset
+------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+::-moz-selection {
+  background: #efefef;
+  color: #333;
+  text-shadow: none; }
+
+::selection {
+  background: #efefef;
+  color: #333;
+  text-shadow: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+/* ==========================================================================
+
+   Buttons
+
+   ========================================================================== */
+/* ==========================================================================
+
+   Vertical Rhythm and Modular Scale with Baseline Grid by Justin Metros
+   // inspired by www.gridlover.net
+
+   ========================================================================== */
+/* Typography
+------------------------------------------------------------ */
+@font-face {
+  font-family: inertia;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/inertia.eot");
+  src: url("../font/inertia.eot?#iefix") format("embedded-opentype"), url("../font/inertia.woff") format("woff"), url("../font/inertia.ttf") format("truetype"), url("../font/inertia.svg#inertia") format("svg"); }
+
+body {
+  font-family: "helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.7); }
+
+h1, .alpha {
+  font-size: 41px;
+  line-height: 54px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  line-height: .8; }
+
+h2, .beta {
+  font-size: 27px;
+  line-height: 36px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  line-height: .8; }
+
+h3, .gamma {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  line-height: .9; }
+
+h4, .delta {
+  font-size: 12px;
+  line-height: 18px;
+  line-height: 1; }
+
+h5, .epsilon {
+  font-size: 8px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1; }
+
+h6, .zeta {
+  font-size: 5px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1; }
+
+p, ul, ol {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 18px; }
+
+html {
+  height: 100%; }
+
+body {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: 100%; }
+
+a, a:hover, a:focus, a:active, a:visited {
+  color: black; }
+
+nav {
+  position: fixed;
+  display: block;
+  top: 0px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  height: 5%;
+  z-index: 1000; }
+  nav ul {
+    margin: 0px; }
+    nav ul li {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      text-align: center;
+      border-top: 4px solid black; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li:hover {
+        background-color: yellow; }
+      nav ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+
+section {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%; }
+  section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section header {
+    position: relative;
+    height: 20%;
+    margin-bottom: 5%;
+    border-bottom: 4px solid black; }
+    section header h2 {
+      position: absolute;
+      bottom: 0px; }
+
+p {
+  padding: 0px 5px; }
+
+@-webkit-keyframes dash {
+  80% {
+    stroke-dashoffset: 0;
+    fill: rgba(0, 0, 0, 0); }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: black; } }
+
+@-moz-keyframes dash {
+  80% {
+    stroke-dashoffset: 0;
+    fill: rgba(0, 0, 0, 0); }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: black; } }
+
+@keyframes dash {
+  80% {
+    stroke-dashoffset: 0;
+    fill: rgba(0, 0, 0, 0); }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: black; } }
+
+.hero {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 50%; }
+  .hero svg {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 120.38942%;
+    margin-left: -10.19471%;
+    background-color: yellow; }
+    .hero svg:last-child {
+      margin-right: 0; }
+  .hero .hero_text {
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 1px;
+    stroke: black;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    -webkit-animation: dash 5s ease-in-out both;
+    -moz-animation: dash 5s ease-in-out both;
+    animation: dash 5s ease-in-out both;
+    font-size: 100px;
+    text-rendering: optimizeLegibility; }
+
+.description {
+  height: 25%;
+  width: 100%; }
+  .description .description_column {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 18.44231%;
+    vertical-align: top;
+    padding-top: 5rem; }
+    .description .description_column:last-child {
+      margin-right: 0; }
+    .description .description_column:first-child {
+      margin-left: 61.16827%; }
+
+.process_board {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 1.94712%;
+  width: 100%;
+  height: 75%; }
+  .process_board:last-child {
+    margin-right: 0; }
+  .process_board .process_tile_1 {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 18.44231%;
+    background: url("../img/process_1.jpg") center/cover;
+    background: url("../img/process_1.jpg") center/cover;
+    margin-left: 40.77885%;
+    height: 33%; }
+    .process_board .process_tile_1:last-child {
+      margin-right: 0; }
+  .process_board .process_tile_2 {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 18.44231%;
+    background: url("../img/process_2.jpg") center/cover;
+    background: url("../img/process_2.jpg") center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 66%; }
+    .process_board .process_tile_2:last-child {
+      margin-right: 0; }
+  .process_board .process_tile_3 {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 18.44231%;
+    height: 33%;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+    .process_board .process_tile_3:last-child {
+      margin-right: 0; }
+  .process_board .process_tile_5 {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 38.83173%;
+    background: url("../img/process_5.png") center/cover;
+    background: url("../img/process_5.png") center/cover;
+    position: absolute;
+    top: 33%;
+    margin-left: 20.38942%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 66%; }
+    .process_board .process_tile_5:last-child {
+      margin-right: 0; }
+  .process_board .process_tile_4 {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 18.44231%;
+    margin-right: 0;
+    background: url("../img/process_4.png") center/cover;
+    background: url("../img/process_4.png") center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 33%; }
+    .process_board .process_tile_4:last-child {
+      margin-right: 0; }
+
+div.tryout_board {
+  height: 75%; }
+  div.tryout_board .tryout_form {
+    float: left;
+    display: block;
+    margin-right: 1.94712%;
+    width: 100%; }
+    div.tryout_board .tryout_form:last-child {
+      margin-right: 0; }
+    div.tryout_board .tryout_form .tryout_text {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 38.83173%;
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 36px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+      margin-bottom: 36px;
+      outline: 0px;
+      border: 0px;
+      border-bottom: 2px solid black;
+      background-color: yellow;
+      text-indent: 20px; }
+      div.tryout_board .tryout_form .tryout_text:last-child {
+        margin-right: 0; }
+  div.tryout_board svg {
+    clear: both; }
+    div.tryout_board svg:nth-child(2) {
+      font-size: 40pt;
+      height: 10%; }
+    div.tryout_board svg:nth-child(3) {
+      font-size: 60pt;
+      height: 15%; }
+    div.tryout_board svg:nth-child(4) {
+      font-size: 80pt;
+      height: 20%; }
+    div.tryout_board svg:nth-child(5) {
+      font-size: 100pt;
+      height: 25%; }
+    div.tryout_board svg:nth-child(6) {
+      font-size: 140pt;
+      height: 30%; }
+  div.tryout_board text.tryout_display {
+    font-family: 'inertia'; }
+
+.architecture_board {
+  float: left;
+  display: block;
+  margin-right: 1.94712%;
+  width: 100%;
+  margin-left: 20.38942%;
+  height: 75%; }
+  .architecture_board:last-child {
+    margin-right: 0; }
+  .architecture_board svg {
+    height: 15%;
+    font-size: 72pt; }
+    .architecture_board svg:nth-child(1) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(1):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(2) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%;
+      clear: left; }
+      .architecture_board svg:nth-child(2):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(3) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(3):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(4) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(4):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(5) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%;
+      clear: left; }
+      .architecture_board svg:nth-child(5):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(6) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(6):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(7) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(7):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(8) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(8):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(9) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%;
+      clear: left; }
+      .architecture_board svg:nth-child(9):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(10) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%;
+      clear: left; }
+      .architecture_board svg:nth-child(10):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(11) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(11):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(12) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 18.44231%; }
+      .architecture_board svg:nth-child(12):last-child {
+        margin-right: 0; }
+    .architecture_board svg:nth-child(13) {
+      float: left;
+      display: block;
+      margin-right: 1.94712%;
+      width: 120.38942%;
+      margin-left: -30.58413%;
+      -webkit-animation: dash 5s ease-in-out both;
+      -moz-animation: dash 5s ease-in-out both;
+      animation: dash 5s ease-in-out both;
+      fill: rgba(0, 0, 0, 0);
+      stroke-width: 1px;
+      stroke: black;
+      stroke-dasharray: 1600;
+      stroke-dashoffset: 1600;
+      clear: left;
+      background-color: yellow;
+      height: 25%; }
+      .architecture_board svg:nth-child(13):last-child {
+        margin-right: 0; }
+  .architecture_board .architecture_display {
+    font-family: 'inertia'; }
+
+#download {
+  height: 50%; }
+  #download header {
+    height: 40%;
+    margin-top: 5%; }
+
+.download_board {
+  float: left;
+  display: block;
+  margin-right: 1.94712%;
+  width: 38.83173%; }
+  .download_board:last-child {
+    margin-right: 0; }
+  .download_board .download_link {
+    font-family: 'inertia';
+    display: inline-block;
+    font-size: 42pt;
+    padding: 10% 2% 8% 2%;
+    white-space: nowrap; }
+    .download_board .download_link:hover {
+      background-color: yellow; }
+
+.download_info {
+  float: left;
+  display: block;
+  margin-right: 1.94712%;
+  width: 18.44231%; }
+  .download_info:last-child {
+    margin-right: 0; }
